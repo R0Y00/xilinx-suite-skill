@@ -1,0 +1,4 @@
+interface:
+  display_name: "Xilinx Suite"
+  short_description: "Version-aware Vivado, Vitis, and PetaLinux workflows"
+  default_prompt: "Use $xilinx-suite to build and verify a version-aware AMD/Xilinx FPGA workflow."
