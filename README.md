@@ -7,6 +7,11 @@ Vitis Unified 与 PetaLinux，并针对原生 Windows 和 Vivado 2025.2 提供
 > A version-aware Codex skill for AMD/Xilinx FPGA development across Vivado,
 > Vitis HLS, Vitis Unified, and PetaLinux.
 
+> [!IMPORTANT]
+> This is an unofficial community project. It is not affiliated with or
+> endorsed by AMD. AMD, Xilinx, Vivado, and Vitis are trademarks of their
+> respective owners.
+
 ## 为什么需要它
 
 Xilinx/AMD 工具链在不同版本之间存在明显差异：Tcl 命令会变化，IP VLNV
@@ -174,9 +179,22 @@ HLS 脚本应在成功验证导出 IP 后打印 `HLS_FLOW_PASS`；Vitis Python �
 - 最小复现步骤；
 - 验证过的修复及产物。
 
-避免把用户名、绝对工程路径、许可证文件、板卡私有资料或生成产物提交到仓库。
+避免把用户名、绝对工程路径、板卡私有资料或生成产物提交到仓库。
+
+## 来源与致谢
+
+本项目基于
+[QingquanYao/xilinx-skill](https://github.com/QingquanYao/xilinx-skill)
+修改和扩展。感谢原作者 QingquanYao 提供的 Xilinx 工具链 skill 结构与参考
+资料。
+
+本项目在上游基础上重点增加和重构了 Vivado/Vitis 2025.2、原生 Windows、
+GUI 可打开工程、Vitis HLS component、Vitis Unified、Zynq-7000、JTAG/UART
+实机验证、版本兼容和安全执行等内容。
+
+上游项目声明采用 MIT License。具体来源、保留内容和主要修改见
+[NOTICE.md](NOTICE.md)。
 
 ## 许可证
 
-当前仓库尚未包含许可证文件。公开发布前请根据你的发布意图添加合适的
-`LICENSE`；在此之前，默认不授予复制、修改或再分发权利。
+本项目采用 [MIT License](LICENSE)，并保留上游项目的来源与版权说明。
